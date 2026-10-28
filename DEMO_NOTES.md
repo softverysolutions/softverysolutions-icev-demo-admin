@@ -17,6 +17,18 @@ Same thing from a terminal: `npm run serve:demo -- --open` (or `node scripts/ser
 The server (`scripts/serve-demo.js`) has no dependencies: it serves `dist/` with an SPA fallback on 127.0.0.1 only.
 Use the same port every time — demo data is stored per browser and per origin (`localhost:4317`).
 
+## Hosted copy (GitHub Pages)
+
+https://softverysolutions.github.io/softverysolutions-icev-demo-admin/ — same build under a sub-path. Each visitor's
+changes stay in their own browser. To update it:
+
+```bash
+npm run build:pages     # PUBLIC_URL=/softverysolutions-icev-demo-admin → build-pages/ (+ 404.html SPA fallback, .nojekyll)
+```
+
+then publish `build-pages/` as the root of the `gh-pages` branch. Deep links are served through `404.html`, so the
+browser logs a 404 for the page itself on a direct load or reload; the app then renders normally.
+
 ## Booth cheat sheet
 
 | What to show | How |

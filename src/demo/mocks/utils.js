@@ -1,4 +1,5 @@
 import { HttpResponse } from "msw";
+import { getAppBaseUrl } from "config/api";
 
 export const API = "*/demo-api";
 
@@ -65,7 +66,7 @@ export function sortBy(list, field, direction = "asc") {
 
 // Absolute URL of a bundled demo photo (public/demo-images).
 export const demoImage = (key) =>
-  key ? `${window.location.origin}/demo-images/${String(key).replace(/\.(jpg|png)$/, "")}.${
+  key ? `${getAppBaseUrl()}/demo-images/${String(key).replace(/\.(jpg|png)$/, "")}.${
     String(key).startsWith("logo-") ? "png" : "jpg"
   }` : null;
 

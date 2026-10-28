@@ -15,6 +15,9 @@ export function startMockApi() {
   return worker.start({
     onUnhandledRequest: "bypass",
     quiet: true,
-    serviceWorker: { url: `${process.env.PUBLIC_URL || ""}/mockServiceWorker.js` },
+    serviceWorker: {
+      url: `${process.env.PUBLIC_URL || ""}/mockServiceWorker.js`,
+      options: { scope: `${process.env.PUBLIC_URL || ""}/` },
+    },
   });
 }

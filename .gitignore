@@ -30,3 +30,4 @@ commit.sh
 
 # local tunnel logs
 .tunnel/
+/build-pages

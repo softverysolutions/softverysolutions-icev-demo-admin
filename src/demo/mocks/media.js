@@ -1,6 +1,7 @@
 // Uploaded files live in IndexedDB and are served back by the mock API at /demo-media/<key>,
 // so an upload survives a reload and "Reset demo" can wipe it.
 import { http, HttpResponse } from "msw";
+import { getAppBaseUrl } from "config/api";
 import { API, json, readJson } from "./utils";
 
 const DB_NAME = "softvery-demo-admin-media";
@@ -25,7 +26,7 @@ async function tx(mode, run) {
   });
 }
 
-export const mediaUrl = (key) => `${window.location.origin}/demo-media/${encodeURIComponent(key)}`;
+export const mediaUrl = (key) => `${getAppBaseUrl()}/demo-media/${encodeURIComponent(key)}`;
 
 export async function clearMedia() {
   try {
@@ -35,7 +36,7 @@ export async function clearMedia() {
   }
 }
 
-const keyFromUrl = (url) => decodeURIComponent(new URL(url).pathname.replace(/^\/demo-media\//, ""));
+const keyFromUrl = (url) => decodeURIComponent(new URL(url).pathname.replace(/^.*\/demo-media\//, ""));
 
 export const mediaHandlers = [
   http.post(`${API}/media/presigned-upload-url`, async ({ request }) => {

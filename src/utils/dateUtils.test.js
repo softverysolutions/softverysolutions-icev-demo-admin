@@ -1,7 +1,7 @@
 import { formatDateOnly, formatDateOnlyGB } from "./dateUtils";
 
 // Run under different TZ values (e.g. TZ=America/Sao_Paulo, TZ=Europe/Kyiv):
-// the saved UTC day must be shown in every zone (PUF-2223).
+// the saved UTC day must be shown in every zone.
 describe("UTC day formatting", () => {
   it("shows a discount start day stored as UTC midnight", () => {
     expect(formatDateOnly("2026-09-01T00:00:00.000Z")).toBe("01.09.2026");

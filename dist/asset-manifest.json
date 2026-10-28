@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.7b3f81f7.css",
-    "main.js": "/static/js/main.51fcbd4a.js",
+    "main.js": "/static/js/main.469e53f1.js",
     "static/media/material-icons-round.woff": "/static/media/material-icons-round.5d681e2edae8c60630db.woff",
     "static/media/material-icons-round.woff2": "/static/media/material-icons-round.c380809fd3677d7d6903.woff2",
     "static/media/material-icons.woff": "/static/media/material-icons.4d73cb90e394b34b7670.woff",
@@ -72,6 +72,6 @@
   },
   "entrypoints": [
     "static/css/main.7b3f81f7.css",
-    "static/js/main.51fcbd4a.js"
+    "static/js/main.469e53f1.js"
   ]
 }

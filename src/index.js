@@ -33,7 +33,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 startMockApi().then(() =>
   root.render(
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL || "/"}>
       <SoftUIControllerProvider>
         <App />
       </SoftUIControllerProvider>

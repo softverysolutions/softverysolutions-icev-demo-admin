@@ -1,9 +1,10 @@
 // Demo database: every collection the mock API serves, persisted in localStorage.
 // The first load (and "Reset demo") builds it from the seed in src/demo/seed.
+import { getAppBaseUrl } from "config/api";
 import { buildSeed } from "./seed";
 
 const DB_KEY = "softvery-demo-admin:db:v1";
-const ORIGIN_KEY = "softvery-demo-admin:origin";
+const ORIGIN_KEY = "softvery-demo-admin:base-url";
 
 let state = null;
 
@@ -11,10 +12,10 @@ function load() {
   try {
     const raw = window.localStorage.getItem(DB_KEY);
     if (!raw) return null;
-    // Seed image URLs are absolute; follow the app if it is served from another port.
-    const savedOrigin = window.localStorage.getItem(ORIGIN_KEY);
-    const origin = window.location.origin;
-    const text = savedOrigin && savedOrigin !== origin ? raw.split(savedOrigin).join(origin) : raw;
+    // Seed image URLs are absolute; follow the app if it is served from another port or path.
+    const savedBase = window.localStorage.getItem(ORIGIN_KEY);
+    const base = getAppBaseUrl();
+    const text = savedBase && savedBase !== base ? raw.split(savedBase).join(base) : raw;
     return JSON.parse(text);
   } catch {
     return null;
@@ -24,7 +25,7 @@ function load() {
 function persist() {
   try {
     window.localStorage.setItem(DB_KEY, JSON.stringify(state));
-    window.localStorage.setItem(ORIGIN_KEY, window.location.origin);
+    window.localStorage.setItem(ORIGIN_KEY, getAppBaseUrl());
   } catch (error) {
     console.warn("[demo] could not persist demo data", error);
   }

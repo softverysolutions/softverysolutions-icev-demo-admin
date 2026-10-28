@@ -128,7 +128,7 @@ function DataTable({
     }
   }, [defaultValue, useServerPagination]);
 
-  // A list filtered or searched from outside starts again from its first page (PUF-2178).
+  // A list filtered or searched from outside starts again from its first page.
   useEffect(() => {
     if (!useServerPagination && gotoPage) gotoPage(0);
     // eslint-disable-next-line react-hooks/exhaustive-deps
