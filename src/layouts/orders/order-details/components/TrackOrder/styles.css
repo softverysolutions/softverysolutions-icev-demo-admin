@@ -1,0 +1,38 @@
+.timeline-item {
+  position: relative;
+}
+
+.timeline-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  top: 40px;
+  bottom: -10px;
+  width: 2px;
+  background-color: #e0e0e0;
+  z-index: 0;
+}
+
+.timeline-item.active:not(:last-child)::after {
+  background-color: #12B886;
+}
+
+.timeline-item.active .MuiIcon-root {
+  color: #12B886 !important;
+}
+
+.timeline-item.active .MuiIcon-root::after {
+  content: "✓";
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  background-color: #12B886;
+  color: white;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
