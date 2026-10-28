@@ -27,3 +27,6 @@ yarn.lock
 commit.sh
 .env*
 !.env.example
+
+# local tunnel logs
+.tunnel/
