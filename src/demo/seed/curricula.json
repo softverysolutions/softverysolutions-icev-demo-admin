@@ -1,0 +1,187 @@
+{
+  "webDevelopment": [
+    { "topic": "HTML, CSS & the web", "lessons": [
+      ["How the web works", "Browsers, servers, HTTP and DNS in one picture."],
+      ["Semantic HTML", "Structure pages so people and screen readers understand them."],
+      ["CSS layout with Flexbox & Grid", "Build responsive layouts without hacks."],
+      ["Git & GitHub basics", "Commit, branch and open your first pull request."] ] },
+    { "topic": "JavaScript foundations", "lessons": [
+      ["Variables, types & functions", "The building blocks of every program."],
+      ["Arrays, objects & loops", "Work with real data structures."],
+      ["The DOM & events", "Make pages react to clicks and input."],
+      ["Async JavaScript", "Promises, async/await and fetching data."] ] },
+    { "topic": "React", "lessons": [
+      ["Components & JSX", "Think in reusable UI pieces."],
+      ["State & props", "Data flow in a React app."],
+      ["Hooks in practice", "useState, useEffect and custom hooks."],
+      ["Routing & forms", "Multi-page apps and validated forms."] ] },
+    { "topic": "Back end with Node.js", "lessons": [
+      ["Node.js & npm", "Run JavaScript on the server."],
+      ["REST APIs with Express", "Design and build your first API."],
+      ["Databases & SQL", "Model data in PostgreSQL."],
+      ["Authentication", "Sessions, tokens and password hashing."] ] },
+    { "topic": "Team project & demo day", "lessons": [
+      ["Pitch your idea", "Form teams and agree on a scope."],
+      ["Sprint planning", "Break work into tickets and estimate."],
+      ["Testing & deployment", "Automated tests and shipping to the cloud."],
+      ["Demo day", "Present your product to hiring partners."] ] }
+  ],
+  "dataScience": [
+    { "topic": "Python for data", "lessons": [
+      ["Python refresher", "Syntax, functions and notebooks."],
+      ["pandas essentials", "Load, clean and reshape data."],
+      ["Visualisation", "Tell a story with charts."] ] },
+    { "topic": "Statistics & SQL", "lessons": [
+      ["Descriptive statistics", "Averages, spread and distributions."],
+      ["Hypothesis testing", "A/B tests without the jargon."],
+      ["SQL for analysts", "Joins, window functions and CTEs."] ] },
+    { "topic": "Machine learning", "lessons": [
+      ["Supervised learning", "Regression and classification with scikit-learn."],
+      ["Model evaluation", "Train/test splits, metrics and overfitting."],
+      ["Feature engineering", "Turn raw data into signal."] ] },
+    { "topic": "Deep learning & generative AI", "lessons": [
+      ["Neural networks", "From perceptrons to transformers."],
+      ["Working with LLMs", "Prompting, embeddings and retrieval."],
+      ["Evaluating AI systems", "Measure quality and safety."] ] },
+    { "topic": "Capstone", "lessons": [
+      ["Scope your capstone", "Pick a dataset and a question."],
+      ["Build & iterate", "Mentor check-ins and pair work."],
+      ["Present your results", "Share your findings with partner companies."] ] }
+  ],
+  "uxUi": [
+    { "topic": "Research & discovery", "lessons": [
+      ["Design thinking", "Empathise, define, ideate, prototype, test."],
+      ["User interviews", "Ask questions that reveal real needs."],
+      ["Personas & journeys", "Turn research into shared understanding."] ] },
+    { "topic": "Information architecture & wireframes", "lessons": [
+      ["Card sorting", "Organise content the way users think."],
+      ["User flows", "Map every step to the goal."],
+      ["Low-fi wireframes", "Sketch fast, fail cheap."] ] },
+    { "topic": "Visual design in Figma", "lessons": [
+      ["Typography & colour", "Hierarchy and accessible contrast."],
+      ["Components & auto layout", "Build a mini design system."],
+      ["High-fidelity screens", "Polish the details."] ] },
+    { "topic": "Prototype & test", "lessons": [
+      ["Interactive prototypes", "Link screens and add micro-interactions."],
+      ["Usability testing", "Run sessions and capture insights."],
+      ["Case study & portfolio", "Present your process and outcome."] ] }
+  ],
+  "cybersecurity": [
+    { "topic": "Networks & Linux", "lessons": [
+      ["The OSI model", "How data moves across a network."],
+      ["Linux command line", "Navigate, permissions and processes."],
+      ["Packet analysis", "Read traffic with Wireshark."] ] },
+    { "topic": "Threats & defence", "lessons": [
+      ["Threat landscape", "Phishing, malware and social engineering."],
+      ["Firewalls & hardening", "Reduce the attack surface."],
+      ["Identity & access", "MFA, least privilege and zero trust."] ] },
+    { "topic": "Cloud & application security", "lessons": [
+      ["Cloud security basics", "Shared responsibility and misconfigurations."],
+      ["OWASP Top 10", "The most common web vulnerabilities."],
+      ["Secure coding", "Fix vulnerabilities at the source."] ] },
+    { "topic": "Detection & response", "lessons": [
+      ["Logging & SIEM", "Spot attacks in the noise."],
+      ["Incident response", "Contain, eradicate, recover."],
+      ["Capture the flag", "Put it all together in the cyber range."] ] }
+  ],
+  "mobileDevelopment": [
+    { "topic": "Mobile foundations", "lessons": [
+      ["How mobile apps work", "Native, cross-platform and the app lifecycle."],
+      ["Your first screen", "Layout with Flexbox and safe areas."],
+      ["Navigation", "Stacks, tabs and deep links."] ] },
+    { "topic": "State & data", "lessons": [
+      ["State management", "Local state, context and stores."],
+      ["Talking to APIs", "Fetching, caching and errors."],
+      ["Offline storage", "Keep the app useful without signal."] ] },
+    { "topic": "Polish", "lessons": [
+      ["Animations", "Smooth, 60 fps interactions."],
+      ["Accessibility", "Screen readers, contrast and touch targets."],
+      ["Performance", "Profiling and fixing jank."] ] },
+    { "topic": "Ship it", "lessons": [
+      ["Testing", "Unit and end-to-end tests."],
+      ["Builds & signing", "Prepare release builds for both stores."],
+      ["Launch day", "Store listing, screenshots and feedback."] ] }
+  ],
+  "surf": [
+    { "topic": "Ocean basics", "lessons": [
+      ["Surf safety & etiquette", "Currents, right of way and staying safe."],
+      ["Reading the waves", "Tides, swell and choosing a spot."],
+      ["Paddling & pop-up", "The movement behind every wave."],
+      ["Riding whitewater", "Your first waves standing up."] ] },
+    { "topic": "Green waves", "lessons": [
+      ["Duck dives & turtle rolls", "Get out the back with less effort."],
+      ["Angling the take-off", "Ride along the face, not straight in."],
+      ["Bottom turn", "The turn that sets up everything else."] ] },
+    { "topic": "Manoeuvres", "lessons": [
+      ["Trimming & speed", "Generate speed down the line."],
+      ["Cutback", "Return to the power of the wave."],
+      ["Video review", "Watch, compare and improve."] ] },
+    { "topic": "Surf like a local", "lessons": [
+      ["Board choice", "Volume, rocker and fins explained."],
+      ["Surf forecasting", "Read charts like a coach."],
+      ["Free surf session", "Put it all together."] ] }
+  ],
+  "football": [
+    { "topic": "Technique", "lessons": [
+      ["First touch", "Control the ball under pressure."],
+      ["Passing patterns", "Short, long and one-touch combinations."],
+      ["Finishing", "Shooting technique from different angles."],
+      ["Friendly match", "Play an 11-a-side game."] ] },
+    { "topic": "Tactics", "lessons": [
+      ["Positional play", "Width, depth and creating space."],
+      ["Pressing", "Win the ball back as a team."],
+      ["Set pieces", "Corners and free kicks."] ] },
+    { "topic": "Performance", "lessons": [
+      ["Conditioning", "Speed, agility and endurance."],
+      ["Recovery & nutrition", "Train hard, recover smart."],
+      ["Video analysis", "Learn from match footage."] ] }
+  ],
+  "tennis": [
+    { "topic": "Groundstrokes", "lessons": [
+      ["Forehand fundamentals", "Grip, stance and swing path."],
+      ["Backhand", "One-handed and two-handed technique."],
+      ["Rally consistency", "Depth and height over the net."],
+      ["Match play", "Points with a coach on court."] ] },
+    { "topic": "Serve & net", "lessons": [
+      ["Serve mechanics", "Toss, trophy position and pronation."],
+      ["Return of serve", "Split step and short backswing."],
+      ["Volleys", "Punch, don't swing."] ] },
+    { "topic": "Strategy", "lessons": [
+      ["Patterns of play", "Build points with intent."],
+      ["Mental game", "Routines between points."],
+      ["Mini tournament", "Compete with the group."] ] }
+  ],
+  "yogaFitness": [
+    { "topic": "Foundations", "lessons": [
+      ["Anatomy for movement", "Muscles, joints and safe alignment."],
+      ["Breath & warm-up", "Prepare the body for practice."],
+      ["Core sequences", "Strength and stability from the centre."] ] },
+    { "topic": "Teaching skills", "lessons": [
+      ["Cueing", "Clear, concise instructions."],
+      ["Sequencing a class", "Build a balanced 60-minute session."],
+      ["Adjustments & modifications", "Adapt for every body."] ] },
+    { "topic": "Practice teaching", "lessons": [
+      ["Teach a peer group", "Run your first full class."],
+      ["Feedback session", "Learn from mentors and peers."],
+      ["Business of teaching", "Find students and plan your path."] ] },
+    { "topic": "Certification", "lessons": [
+      ["Written assessment", "Theory review and test."],
+      ["Practical assessment", "Teach in front of the examiners."],
+      ["Graduation", "Receive your certificate."] ] }
+  ],
+  "skiSnowboard": [
+    { "topic": "On the snow", "lessons": [
+      ["Equipment & safety", "Bindings, layers and the rules of the slope."],
+      ["Gliding & stopping", "Snowplough or heel edge — control first."],
+      ["First turns", "Link turns on a blue run."],
+      ["Lift practice", "Chairlifts and drag lifts with confidence."] ] },
+    { "topic": "Carving & control", "lessons": [
+      ["Parallel turns", "Edges, not skids."],
+      ["Steeper terrain", "Red runs with rhythm."],
+      ["Video session", "Spot what to improve."] ] },
+    { "topic": "Beyond the piste", "lessons": [
+      ["Avalanche awareness", "Read the bulletin and the terrain."],
+      ["Off-piste basics", "Powder technique with a guide."],
+      ["Final descent", "A full-mountain tour with the group."] ] }
+  ]
+}
